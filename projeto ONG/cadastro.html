@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <header>
+    <h1>Cadastro</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="projetos.html">Projetos Sociais</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome Completo:
+          <input type="text" name="nome" required>
+        </label>
+
+        <label>E-mail:
+          <input type="email" name="email" required>
+        </label>
+
+        <label>CPF:
+          <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+        </label>
+
+        <label>Telefone:
+          <input type="tel" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(99) 99999-9999" required>
+        </label>
+
+        <label>Data de Nascimento:
+          <input type="date" name="data_nascimento" required>
+        </label>
+
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label>CEP:
+          <input type="text" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required>
+        </label>
+
+        <label>Cidade:
+          <input type="text" name="cidade" required>
+        </label>
+
+        <label>Estado:
+          <input type="text" name="estado" required>
+        </label>
+
+        <label>Endereço:
+          <input type="text" name="endereco" required>
+        </label>
+
+      </fieldset>
+      <button type="submit">Enviar</button>
+
+      
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Grupo Força Animal</p>
+  </footer>
+</body>
+</html>
